@@ -19,3 +19,5 @@ When an instructor permits collaboration on an assignment, then collaboration is
 External sources, including published materials or material on the Web, may be used in assignments only to the extent permitted by the instructor. If such a source is used, the assignment must include an attribution to the source. Ideas, algorithms, text, code, and experimental results all require proper attribution.
 
 A student may not submit the same assignment to two different classes, whether in the same semester or in different semesters, without the explicit permission of both instructors.
+
+As a project group, we confirm that we are aware of the regulations above and will not attempt any kind of a behavior that contradicts with these regulations.
