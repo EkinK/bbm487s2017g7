@@ -4,11 +4,11 @@ BBM487 Software Engineering Lab. - 2017 Spring - Group 7 - Library Book Loan Sys
 
 Group Members & Responsibilities
 
-Özdeş Öztürk:Project Manager, Designer 
+Özdeş Öztürk: Project Manager, Designer 
 
-Ekin Kandemir:Test Analyst, Documentation 
+Ekin Kandemir: Test Analyst, Documentation 
 
-Kadir Bulut - Coder
+Kadir Bulut: Coder
 
 Academic Integrity
 
