@@ -1,0 +1,189 @@
+html {
+	height = %100;
+}
+body {
+	height: 100%;
+	font-size: 12px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin: 0 auto;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e0e0e+0,7d7e7d+80 */
+	background: white; /* Old browsers */
+	background: -moz-linear-gradient(top, #3e3e3e 0%, #9d9e9d 80%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #3e3e3e 0%,#9d9e9d 80%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #3e3e3e 0%,#9d9e9d 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3e3e', endColorstr='#9d9e9d',GradientType=0 ); /* IE6-9 */
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Typography */
+h1#title {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	font-size: 2.8em;
+	color: white;
+	text-shadow: 0 0 10px rgba(0,0,0,0.8);
+	margin: 0 auto;
+	padding-top: 50px;
+	max-width: 300px;
+	text-align: center;
+	position: relative;
+	top: 0px;
+}
+
+h1#title span span {
+	font-weight: 400;
+}
+
+h2 {
+	color: white;
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-size: 1.4em;
+	line-height: 2.8em;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: white;
+	font-weight: 400;
+	font-size: 1.4em;
+	line-height: 2em;
+	text-align: center;
+}
+
+table.tbl {
+    background-color: white;
+}
+
+table {
+    display: table;
+    border-collapse: seperate;
+    border-spacing: 8px;
+    border-color: grey;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: inline-block;
+    vertical-align: inherit;
+    border-color: inherit;
+	font-weight: 500;
+	font-size: .8em;
+	color: #888;
+	text-transform: capitalize;
+	box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+a:hover {
+	color: #000000;
+}
+
+p.small {
+	font-size: 0.8em;
+	margin: 20px 0 0;
+}
+
+/* Layout */
+.container {
+	margin: 0;
+}
+
+.top {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.login-box {
+	background-color: white;
+	max-width: 260px;
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+	padding-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+	text-align: center;
+}
+
+.login-box .box-header {
+	background-color: #665851;
+	margin-top: 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.login-box label {
+	font-weight: 700;
+	font-size: .8em;
+	color: #888;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 2em;
+}
+
+.login-box input {
+	margin-bottom: 20px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	font-size: .9em;
+	color: #888;
+}
+
+.login-box input:focus {
+	outline: none;
+	border-color: #665851;
+	transition: 0.5s;
+	color: #665851;
+}
+
+.login-box button, a.cancel_button {
+	margin-top: 0px;
+	border: 0;
+	border-radius: 2px;
+	color: white;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.9em;
+	letter-spacing: 1px;
+	background-color: #665851;
+	cursor:pointer;
+	outline: none;
+}
+
+
+.login-box button:hover, a.cancel_button:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.selected {
+	color: #665851!important;
+	transition: 0.5s;
+}
+
+/* Animation Delay */
+#logo {
+  -webkit-animation-duration: 0.4;
+  -webkit-animation-delay: 0.4;
+}
+
+.login-box {
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-delay: 0.7;
+}
