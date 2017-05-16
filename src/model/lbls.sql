@@ -37,17 +37,24 @@ CREATE TABLE BOOKS
 CREATE TABLE BORROWS 
 (
   borrowID INT NOT NULL,
-  borrow_date DATE NOT NULL,
-  delivery_date DATE NOT NULL,
+  borrow_date DATE,
+  delivery_date DATE,
   userID not null CONSTRAINT fk_userID REFERENCES users(userID),
   bookID not null CONSTRAINT fk_bookID REFERENCES books(bookID),
   CONSTRAINT borrow_pk PRIMARY KEY(borrowID)
 );
 
-CREATE TABLE BORROWS 
+CREATE TABLE WAITINGS 
 (
   waitingID INT NOT NULL,
   userID not null CONSTRAINT fkUserID REFERENCES users(userID),
   bookID not null CONSTRAINT fkBookID REFERENCES books(bookID),
   CONSTRAINT waiting_pk PRIMARY KEY(waitingID)
 );
+
+CREATE TRIGGER `BORROW_TRG` BEFORE INSERT ON `borrows`
+FOR EACH ROW 
+SET NEW.borrow_date = IFNULL(NEW.borrow_date, NOW()),
+	NEW.delivery_date = IFNULL(NEW.delivery_date, DATE_ADD(NOW(),INTERVAL 30 DAY))
+	
+	
