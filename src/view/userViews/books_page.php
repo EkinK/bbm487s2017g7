@@ -1,0 +1,85 @@
+<html>
+<style>
+	button.modify_btn {
+		margin-top: 0px;
+		border: 0;
+		border-radius: 2px;
+		color: white;
+		padding: 5px;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.9em;
+		letter-spacing: 1px;
+		background-color: #665851;
+		cursor:pointer;
+		outline: none;
+	}
+	
+	button.modify_btn:hover {
+		opacity: 0.7;
+		transition: 0.5s;
+	}
+	
+	h2 {
+		color: white;
+		font-weight: 500;
+		letter-spacing: 1px;
+		font-size: 1.4em;
+		line-height: 2.8em;
+	}
+	
+	.box-header {
+		margin-top: 0;
+		border-radius: 5px 5px 0 0;
+	}
+	
+	table.tbl:lang(tr) {
+		border-radius: 8px;
+	}
+</style>
+
+<?php 
+
+	include_once 'user_header.php';
+?>
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/style.css">
+<div class="container" style="padding-left: 15px;">
+	<div class="top">
+		<br/><br/><h1 id="title"></h1>
+		<div class="animated fadeInRight" style = "-webkit-animation-duration: 0.5s; -webkit-animation-delay: 0.5;">
+			<div class="box-header">
+				<h2 style="letter-spacing: 0px; font-size: 1.3em; padding-left: 5px;">INSTANT BORROW</h2>
+			</div>
+			<table class="tbl" style="border-radius: 8px;">
+				<?php 
+					if(isset($_POST['search'])) {
+						listAvailableBooks($_POST['search']);
+					}else {
+						listAvailableBooks("");
+					}
+				?>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="container" style="padding-left: 15px;">
+	<div class="top">
+		<h1 id="title"></h1>
+		<div class="animated fadeInLeft" style = "-webkit-animation-duration: 0.5s; -webkit-animation-delay: 0.5;">
+			<div class="box-header">
+				<h2 style="letter-spacing: 0px; font-size: 1.3em; padding-left: 5px;">QUEUE UP</h2>
+			</div>
+			<table class="tbl" style="border-radius: 8px;">
+				<?php 
+					if(isset($_POST['search'])) {
+						listUnavailableBooks($_POST['search']);
+					}else {
+						listUnavailableBooks("");
+					}
+				?>
+			</table>
+		</div>
+	</div>
+</div>
+</html>
