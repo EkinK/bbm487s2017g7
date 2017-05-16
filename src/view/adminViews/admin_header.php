@@ -189,7 +189,7 @@ body {
 		<form style="float:right; padding-top: 8px; padding-right: 50px;" action="search_book.php" method="POST"> 
 			<div style="background-color: #777; border: none; border-radius: 6px; padding: 4px; -webkit-transform: translate(0%, -10%);">
 				<label style="font-size: 13px; color: white; padding-right: 9px; padding-left: 6px;">Search Books</label>
-				<input type="text" name="search" placeholder="Title or Author Name" onkeyup="this.value=fixTurkishChars(this.value)">
+				<input type="text" name="search" required = "required" placeholder="Title or Author Name" onkeyup="this.value=fixTurkishChars(this.value)">
 			</div>
 		</form>
 	</div>
